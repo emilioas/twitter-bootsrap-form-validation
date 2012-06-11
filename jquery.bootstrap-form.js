@@ -59,65 +59,59 @@
                         case 'string': {
                             if (!validators[$validator].test($value)) {
                                 var level = notify($input, $validator, $type);
-                                    if (level == 0) {
-                                        valid = 0;
-                                    }
-                                    if (level == 1 && valid > 0) {
-                                        valid = 1;
-                                    }
-                                    if (level == 2 && valid > 1) {
-                                        valid = 2;
-                                    }
+                                if (level == 2 && valid > 1) {
+                                    valid = 2;
+                                }
+                                if (level == 1 && valid > 0) {
+                                    valid = 1;
+                                }
+                                if (level == 0) {
+                                    valid = 0;
+                                }
                             }
                             break;
                         }
                         case 'integer': {
                             if (!validators[$validator].test($value)) {
-                                if (!notify($input, $validator, $type)) {
-                                    var level = notify($input, $validator, $type);
-                                    if (level == 0) {
-                                        valid = 0;
-                                    }
-                                    if (level == 1 && valid > 0) {
-                                        valid = 1;
-                                    }
-                                    if (level == 2 && valid > 1) {
-                                        valid = 2;
-                                    }
+                                var level = notify($input, $validator, $type);
+                                if (level == 2 && valid > 1) {
+                                    valid = 2;
+                                }
+                                if (level == 1 && valid > 0) {
+                                    valid = 1;
+                                }
+                                if (level == 0) {
+                                    valid = 0;
                                 }
                             }
                             break;
                         }
                         case 'notEmpty': {
                             if ($value === undefined || $value == '') {
-                                if (!notify($input, $validator, $type)) {
-                                    var level = notify($input, $validator, $type);
-                                    if (level == 0) {
-                                        valid = 0;
-                                    }
-                                    if (level == 1 && valid > 0) {
-                                        valid = 1;
-                                    }
-                                    if (level == 2 && valid > 1) {
-                                        valid = 2;
-                                    }
+                                var level = notify($input, $validator, $type);
+                                if (level == 2 && valid > 1) {
+                                    valid = 2;
+                                }
+                                if (level == 1 && valid > 0) {
+                                    valid = 1;
+                                }
+                                if (level == 0) {
+                                    valid = 0;
                                 }
                             }
                             break;
                         }
                         case 'email': {
                             if (!validators[$validator].test($value)) {
-                                if (!notify($input, $validator, $type)) {
-                                    var level = notify($input, $validator, $type);
-                                    if (level == 0) {
-                                        valid = 0;
-                                    }
-                                    if (level == 1 && valid > 0) {
-                                        valid = 1;
-                                    }
-                                    if (level == 2 && valid > 1) {
-                                        valid = 2;
-                                    }
+                                var level = notify($input, $validator, $type);
+                                if (level == 2 && valid > 1) {
+                                    valid = 2;
+                                }
+                                if (level == 1 && valid > 0) {
+                                    valid = 1;
+                                }
+                                if (level == 0) {
+                                    valid = 0;
                                 }
                             }
                             break;
