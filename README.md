@@ -1,4 +1,8 @@
-twitter-bootsrap-form-validation
-================================
+Twitter Bootstrap Form Validation
+=================================
 
-Twitter bootstrap form validation plugin for jQuery
+What's up fellas?
+
+I would like to share with community my small jQuery plugin for Twitter Bootstrap form validation.
+
+Home somebody will find it usefull.
